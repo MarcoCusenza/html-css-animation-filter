@@ -157,6 +157,28 @@
     100% {right: 20%;}
 }
 
-.ex-13-button:hover{
-    animation: total 2s linear;
+.ex-13-button:hover .ex-13-top-white{
+    animation: total-top 2s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: total-bottom 2s linear;
+}
+
+@keyframes total-top{
+    0% {left: 10%; top:-10px;}
+    25% {left: 80%; top:-10px}
+    40% {left: 80%; top:60px;}
+    75% {left: -10%; top:60px;}
+    90% {left: -10%; top:-10px;}
+    100% {left: 10%; top:-10px;}
+}
+
+@keyframes total-bottom{
+    0% {right: 20%; bottom:-10px;}
+    25% {right: 80%; bottom:-10px}
+    40% {right: 80%; bottom:60px;}
+    75% {right: -10%; bottom:60px;}
+    90% {right: -10%; bottom:-10px;}
+    100% {right: 20%; bottom:-10px;}
 }
