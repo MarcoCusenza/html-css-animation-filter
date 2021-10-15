@@ -136,3 +136,27 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: left-right-left 2s linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: right-left-right 2s linear;
+}
+
+@keyframes left-right-left{
+    0% {left: 10%;}
+    50% {left: 68%;}
+    100% {left: 10%;}
+}
+
+@keyframes right-left-right{
+    0% {right: 20%;}
+    50% {right: 65%;}
+    100% {right: 20%;}
+}
+
+.ex-13-button:hover{
+    animation: total 2s linear;
+}
